@@ -1,5 +1,4 @@
 ﻿#include <iostream>
-#include <string>
 #include <ctime>
 #include <random>
 
@@ -75,8 +74,6 @@ public:
 	// print game board fancy!!! <is for player only>
 	void printCards(int card1Num, int card2Num, bool plr)
 	{
-		// lord forgive me.
-
 		static int round = 1;
 		if (round == 3)
 			system("CLS");
@@ -144,6 +141,8 @@ public:
 		round++;
 	}
 
+
+	// handles all conditionals for blackjack
 	void gameLogic(int plrcard1Num, int plrcard2Num, int dealercard1Num, int dealercard2Num)
 	{
 		if (plrcard1Num == 1)
